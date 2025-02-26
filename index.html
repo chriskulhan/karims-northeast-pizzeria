@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">. <!--character set we are using -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This ^^ will allow the page to reset depending on what device we are using -->
+    <title>Karim's Northeast Minneapolis Pizzeria</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .nav-bg { background-color: #c44d34; }
+        .text-brand { color: #c44d34; }
+        .border-brand { border-color: #c44d34; }
+        .bg-light-orange { background-color: #fff8f6; }
+        .hero-bg {
+            /* this will grey out the photos a little */
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/pizza-header.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .btn-brand {
+            background-color: #c44d34;
+            color: white;
+        }
+        .btn-brand:hover {
+            background-color: #a03c28;
+            color: white;
+        }
+        html {
+            scroll-padding-top: 70px;
+        }
+        .anchor-spacer {
+        /* puts some space in between elements */
+            display: block;
+            height: 70px;
+            margin-top: -70px;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- holds most of the content of the website -->
+    <nav class="navbar navbar-expand-lg nav-bg fixed-top">
+        <div class="container">
+            <!-- vv title added -->
+            <a class="navbar-brand text-white fw-bold" href="#">Karim's Pizzeria</a>
+            <!-- navbar-toggler will resize itself because of this vv -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- ul = unordered list: bulleted list -->
+                    <li class="nav-item">
+                        <!-- li displays each of the list items -->
+                        <a class="nav-link text-white" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="hero-bg py-5 mt-5">
+        <!-- ^^ header holds content like title and description of page -->
+        <div class="container text-center text-white">
+            <!-- main element holds the bulk of the content -->
+            <h1 class="display-4">Karim's Northeast Minneapolis Pizzeria</h1>
+            <p class="lead">Where North African Spice Meets Minneapolis Nice</p>
+        </div>
+    </header>
+    <main class="container my-5">
+        <span id="menu" class="anchor-spacer"></span>
+        <section class="row mb-5">
+            <div class="col-md-8">
+                <h2 class="text-brand border-bottom border-brand pb-2 mb-4">Our Signature Pizzas</h2>
+                <!-- ^^ headers h1-h6 are headings within HTML -->
+                <div class="row">
+                    <!-- ^^ row class connects to row bootstrap style in CSS, allows for rows and columns-->
+                    <div class="col-md-6 mb-3">
+                        <div class="card border-brand h-100">
+                            <img src="images/margherita.jpg" class="card-img-top" alt="Tunisian Margherita">
+                            <div class="card-body">
+                                <h5 class="card-title">Tunisian Margherita</h5>
+                                <p class="card-text">Fresh mozzarella and harissa sauce</p>
+                                <p class="card-text fw-bold">$16.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card border-brand h-100">
+                            <img src="images/spicy-pizza.jpg" class="card-img-top" alt="Special">
+                            <div class="card-body">
+                                <h5 class="card-title">Special</h5>
+                                <p class="card-text">Merguez sausage and peppers</p>
+                                <p class="card-text fw-bold">$18.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span id="contact" class="anchor-spacer"></span>
+            <div class="col-md-4">
+                <div class="card bg-light-orange border-brand">
+                    <div class="card-body">
+                        <h3 class="card-title text-brand">Hours</h3>
+                        <p class="mb-2">Monday - Thursday: 11:00 AM - 10:00 PM</p>
+                        <p class="mb-2">Friday - Saturday: 11:00 AM - 11:00 PM</p>
+                        <p>Sunday: 12:00 PM - 9:00 PM</p>
+                        <h3 class="card-title text-brand mt-4">Contact Us</h3>
+                        <p class="mb-2">Phone: (612) 555-0123</p>
+                        <p>Address: 2525 Central Ave NE<br>Minneapolis, MN 55418</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-4 text-center bg-light">
+        <div class="container">
+            <p class="mb-0">© 2025 Karim's Northeast Minneapolis Pizzeria. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>  
